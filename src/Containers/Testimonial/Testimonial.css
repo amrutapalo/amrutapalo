@@ -1,0 +1,10 @@
+.testimonial-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-carousel{
+    display: flex;
+    flex-direction: row;
+}

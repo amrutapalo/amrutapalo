@@ -1,10 +1,11 @@
 import React from "react";
 import "./Home.css";
-import avatar from './assets/amrutpalo-profile.JPG'
+import avatar from "./assets/amrutpalo-profile.JPG";
+import Resume from "./assets/resume.pdf";
 
 const Home = () => {
   return (
-    <div className="profile-home-container">
+    <div className="profile-home-container container">
       <div className="profile-left">
         <div className="social-media-icons">
           <a href="https://www.linkedin.com/in/amruta-palo-7135b0171">
@@ -25,7 +26,8 @@ const Home = () => {
         </div>
         <div className="profile-name">
           <span>
-            Hello, I'M <span className="highlighted-text">Amruta Palo</span>
+            Hello, I'M
+            <span className="profile-name-highlighted-text"> Amruta Palo</span>
           </span>
         </div>
         <div className="profile-role">
@@ -38,18 +40,23 @@ const Home = () => {
           </ul>
         </div>
         <div className="profile-description">
-          I develop experiences that makes lives easier through Web. I work with
-          React JS, Javascript, HTML 5 and CSS3.
+          I develop experiences that makes lives easier through Web.
         </div>
         <div className="profile-actions">
-          <button className="download resume">Resume</button>
-          <button className="hire-me">Hire Me</button>
+          <a href={Resume} download="Resume-AMRUTA-PALO" target="_blank">
+            <button className="download-resume-btn">
+              <i className="fa fa-download"></i> Get Resume
+            </button>
+          </a>
         </div>
       </div>
       <div className="profile-right">
+        <div className="profile-picture">
           <img src={avatar} alt="avatar" />
+        </div>
       </div>
     </div>
+    
   );
 };
 

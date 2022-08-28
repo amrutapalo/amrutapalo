@@ -1,0 +1,31 @@
+.testimonial-card {
+  margin: 1em;
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 38vh;
+  padding: 2em;
+  position: relative;
+  width: 270px;
+}
+.testimonial-person img {
+  height: 30px;
+  width: 30px;
+}
+
+.testimonial-person,
+.testimonial-review {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.testimonial-review {
+  font-style: italic;
+  height: 60%;
+}
+
+.testimonial-person {
+  position: absolute;
+  bottom: 2px;
+  flex-direction: row;
+  height: 40%;
+}

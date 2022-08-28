@@ -3,7 +3,7 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div className="contact-container container">
       <div className="contact-title title">
         <div className="contact-primary-text">Contact Me</div>
         <div className="contact-secondary-text">
@@ -34,28 +34,26 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-right">
-          <div className="contact-form-container">
           {/* onSubmit={onContactSubmitHandler} ref={form} */}
-            <form action="">
-              <input type="text" placeholder="Name" name="name" />
-              {/* {!enteredInputIsValid.name && isTouched && (
+          <form action="">
+            <input type="text" placeholder="Name" name="name" />
+            {/* {!enteredInputIsValid.name && isTouched && (
                 <p className="error-text">Entered name is invalid</p>
               )} */}
-              <input type="text" placeholder="Subject" name="subject" />
-              {/* {!enteredInputIsValid.subject && isTouched && (
+            <input type="text" placeholder="Subject" name="subject" />
+            {/* {!enteredInputIsValid.subject && isTouched && (
                 <p className="error-text">Entered Subject is invalid</p>
               )} */}
-              <input type="text" placeholder="Email" name="email" />
-              {/* {!enteredInputIsValid.email && isTouched && (
+            <input type="text" placeholder="Email" name="email" />
+            {/* {!enteredInputIsValid.email && isTouched && (
                 <p className="error-text">Entered email is invalid</p>
               )} */}
-              <textarea placeholder="Message" name="message" />
-              <button type="submit" className="button">
-                SUBMIT
-              </button>
-              {/* {didSubmit ? <p>Thankyou!</p> : ""} */}
-            </form>
-          </div>
+            <textarea placeholder="Message" name="message" />
+            <button type="submit" className="button">
+              SUBMIT
+            </button>
+            {/* {didSubmit ? <p>Thankyou!</p> : ""} */}
+          </form>
         </div>
       </div>
     </div>

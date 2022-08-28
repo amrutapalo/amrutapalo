@@ -31,7 +31,7 @@ const TESTIMONIALS = [
 
 const Testimonial = () => {
   return (
-    <div className="testimonial-container">
+    <div className="testimonial-container container">
       <div className="testimonial-title title">
         <div className="testimonial-primary-text">Testimonials</div>
         <div className="testimonial-secondary-text">What my colleagues say about me</div>
