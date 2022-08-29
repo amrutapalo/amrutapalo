@@ -21,6 +21,10 @@
 .profile-home-container {
   background-color: rgb(20, 20, 20);
   color: white;
+  background-image: url('/Users/amrutapalo/Desktop/amrutapalo/src/Containers/Footer/assets/shape-bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 20%;
 }
 
 .social-media-icons i{
