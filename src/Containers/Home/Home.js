@@ -32,11 +32,11 @@ const Home = () => {
         </div>
         <div className="profile-role">
           <ul className="dynamic-text">
-            <li>Enthusiastic Developer</li>
-            <li>React Developer</li>
-            <li>Web Developer</li>
-            <li>UI Developer</li>
-            <li>Frontend Developer</li>
+            <li>Enthusiastic Developer 😎</li>
+            <li>Web Developer 🌏</li>
+            <li>UI Developer 💻</li>
+            <li>Frontend Developer 👩‍💻</li>
+            <li>React Developer 📲</li>
           </ul>
         </div>
         <div className="profile-description">
