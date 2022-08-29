@@ -40,7 +40,7 @@ const Home = () => {
           </ul>
         </div>
         <div className="profile-description">
-          I develop experiences that makes lives easier through Web.
+          I develop experiences to make lives easier through Web.
         </div>
         <div className="profile-actions">
           <a href={Resume} download="Resume-AMRUTA-PALO" target="_blank">

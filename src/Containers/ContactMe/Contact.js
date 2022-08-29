@@ -20,7 +20,7 @@ const Contact = () => {
       <div className="contact-content">
         <div className="contact-left">
           <div className="contact-left-title">
-            <h2 className="contact-left-primary-text">Get In Touch</h2>
+            <h2 className="contact-left-primary-text">Get In Touch 📧</h2>
           </div>
           <div className="social-media-icons">
             <a href="https://www.linkedin.com/in/amruta-palo-7135b0171">
@@ -36,6 +36,7 @@ const Contact = () => {
               <i class="fa-brands fa-twitter"></i>
             </a>
           </div>
+          <div className="contact-text">Send Your Email Here!</div>
           <div className="contact-image">
             <img src={contactImage} alt="Contact Image" />
           </div>
@@ -57,7 +58,7 @@ const Contact = () => {
               )} */}
             <textarea placeholder="Message" name="message" />
             <button type="submit" className="button">
-              SUBMIT
+              SEND
             </button>
             {/* {didSubmit ? <p>Thankyou!</p> : ""} */}
           </form>

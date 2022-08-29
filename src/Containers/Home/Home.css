@@ -19,7 +19,7 @@
 }
 
 .profile-home-container {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(25, 25, 25);
   color: white;
   background-image: url('/Users/amrutapalo/Desktop/amrutapalo/src/Containers/Footer/assets/shape-bg.png');
   background-repeat: no-repeat;
@@ -28,16 +28,17 @@
 }
 
 .social-media-icons i{
-  margin-right: 0.3em;
-  font-size: 1.5em;
-  color: black;
+  margin-right: 0.7em;
+  font-size: 0.7em;
   margin-bottom: 1em;
+  color: rgb(212, 210, 210);
 }
 
 .profile-home-container .social-media-icons i {
-  color: white;
   margin-right: 0.5em;
   margin-bottom: 0;
+  font-size: 1.5em;
+  color: rgb(230, 227, 227);
 }
 
 .profile-home-container .profile-left div {
@@ -109,7 +110,7 @@
 
 .download-resume-btn {
     padding: 1em;
-    width: 160px;
+    width: max-content;
     background-color: var(--orange);
     border: none;
     color: white;
