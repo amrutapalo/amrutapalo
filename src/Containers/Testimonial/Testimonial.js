@@ -33,8 +33,9 @@ const Testimonial = () => {
   return (
     <div className="testimonial-container container">
       <div className="testimonial-title title">
-        <div className="testimonial-primary-text">Testimonials</div>
-        <div className="testimonial-secondary-text">What my colleagues say about me</div>
+        <h2 className="testimonial-primary-text">Testimonials</h2>
+        <div className="testimonial-secondary-text secondary-text">What my colleagues say about me</div>
+        <i className="fa-solid fa-horizontal-rule"></i>
       </div>
       <div className="testimonial-carousel">
         {TESTIMONIALS.map((testimony) => (

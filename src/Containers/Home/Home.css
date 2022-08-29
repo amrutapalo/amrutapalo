@@ -19,13 +19,21 @@
 }
 
 .profile-home-container {
-  background-color: rgb(38, 37, 81);
+  background-color: rgb(20, 20, 20);
   color: white;
+}
+
+.social-media-icons i{
+  margin-right: 0.3em;
+  font-size: 1.5em;
+  color: black;
+  margin-bottom: 1em;
 }
 
 .profile-home-container .social-media-icons i {
   color: white;
-  margin: 0 0.3em;
+  margin-right: 0.5em;
+  margin-bottom: 0;
 }
 
 .profile-home-container .profile-left div {

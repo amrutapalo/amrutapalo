@@ -1,19 +1,26 @@
 import React from "react";
 import "./Contact.css";
+import contactImage from "./assets/mailz.jpeg";
 
 const Contact = () => {
+  const onContactSubmitHandler = (event) => {
+    event.preventDefault();
+    console.log("clicked");
+  };
+
   return (
     <div className="contact-container container">
       <div className="contact-title title">
-        <div className="contact-primary-text">Contact Me</div>
-        <div className="contact-secondary-text">
+        <h2 className="contact-primary-text">Contact Me</h2>
+        <div className="contact-secondary-text secondary-text">
           Always available if the right opportunity comes along.
         </div>
+        <i className="fa-solid fa-horizontal-rule"></i>
       </div>
       <div className="contact-content">
         <div className="contact-left">
           <div className="contact-left-title">
-            <div className="contact-left-primary-text">Get In Touch</div>
+            <h2 className="contact-left-primary-text">Get In Touch</h2>
           </div>
           <div className="social-media-icons">
             <a href="https://www.linkedin.com/in/amruta-palo-7135b0171">
@@ -28,14 +35,14 @@ const Contact = () => {
             <a href="https://twitter.com/amrutapalo">
               <i class="fa-brands fa-twitter"></i>
             </a>
-            <a href="#">
-              <i></i>
-            </a>
+          </div>
+          <div className="contact-image">
+            <img src={contactImage} alt="Contact Image" />
           </div>
         </div>
         <div className="contact-right">
           {/* onSubmit={onContactSubmitHandler} ref={form} */}
-          <form action="">
+          <form action="" onSubmit={onContactSubmitHandler}>
             <input type="text" placeholder="Name" name="name" />
             {/* {!enteredInputIsValid.name && isTouched && (
                 <p className="error-text">Entered name is invalid</p>

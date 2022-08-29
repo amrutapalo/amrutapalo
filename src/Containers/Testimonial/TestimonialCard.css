@@ -2,10 +2,11 @@
   margin: 1em;
   box-sizing: border-box;
   font-size: 14px;
-  height: 38vh;
+  height: 30vh;
   padding: 2em;
   position: relative;
-  width: 270px;
+  width: 30vw;
+  background-color: rgba(246, 246, 176, 0.584);
 }
 .testimonial-person img {
   height: 30px;
@@ -18,9 +19,11 @@
   display: flex;
   justify-content: center;
 }
+
 .testimonial-review {
   font-style: italic;
   height: 60%;
+  line-height: 1.2em;
 }
 
 .testimonial-person {
@@ -28,4 +31,30 @@
   bottom: 2px;
   flex-direction: row;
   height: 40%;
+}
+
+.testimonial-by{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1em;
+}
+
+.testimonial-by-name{
+  font-weight: bold;
+}
+
+.testimonial-by-designation{
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.testimonial-person > img{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 119, 0);
+  ;
 }

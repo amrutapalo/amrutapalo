@@ -7,4 +7,14 @@
 .testimonial-carousel{
     display: flex;
     flex-direction: row;
+    height: 70%;
+}
+
+q::before {
+    content: '\201c';
+    color: rgb(255, 119, 0);
+    font-size: 2em;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }

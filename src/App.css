@@ -1,12 +1,44 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.container{
+.container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+
+.secondary-text {
+  font-size: 0.9em;
+  color: rgb(94, 94, 94);
+  letter-spacing: 1px;
+  padding: 0.4em;
+}
+
+.title i{
+  background-color: rgb(245, 126, 0);
+  height: 0.4em;
+  width: 2em;
+  margin-top: 0.5em;
+  border-radius: 10px;
+}
+
+/* .title i::after,
+.title i::before
+{
+  content: '-';
+  height: 0.2em;
+  width: 2em;
+  margin-top: 0.5em;
+} */
