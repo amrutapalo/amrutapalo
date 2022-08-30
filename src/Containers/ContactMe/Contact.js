@@ -1,11 +1,53 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./Contact.css";
 import contactImage from "./assets/mailz.jpeg";
+import emailjs from '@emailjs/browser';
+
+const isEmpty = (value) => (value.trim() === "" ? true : false);
 
 const Contact = () => {
-  const onContactSubmitHandler = (event) => {
+  const form = useRef();
+  const [enteredInputIsInvalid, setEnteredInputIsInvalid] = useState({
+    name: false,
+    email: false,
+    message: false,
+  });
+
+  let nameIsInvalid = false;
+  let emailIsInvalid = false;
+  let messageIsInvalid = false;
+
+  const onContactSubmitHandler = async (event) => {
     event.preventDefault();
     console.log("clicked");
+    const form_submitted = form.current;
+    const nameInput = form_submitted["name"].value;
+    const emailInput = form_submitted["email"].value;
+    const messageInput = form_submitted["message"].value;
+
+    nameIsInvalid = isEmpty(nameInput);
+    emailIsInvalid = isEmpty(emailInput);
+    messageIsInvalid = isEmpty(messageInput);
+    console.log(nameIsInvalid, emailIsInvalid, messageIsInvalid);
+
+    setEnteredInputIsInvalid({
+      name: nameIsInvalid,
+      email: emailIsInvalid,
+      message: messageIsInvalid,
+    });
+
+    console.log(enteredInputIsInvalid);
+
+    if (!nameIsInvalid && !emailIsInvalid && !messageIsInvalid) {
+      console.log("all valid");
+      await emailjs.sendForm(
+        "service_12zp0cn",
+        "template_7sq9bii",
+        form.current,
+        "mcYuAx8nf9nZk0jPO"
+      );
+      event.target.reset();
+    }
   };
 
   return (
@@ -43,20 +85,20 @@ const Contact = () => {
         </div>
         <div className="contact-right">
           {/* onSubmit={onContactSubmitHandler} ref={form} */}
-          <form action="" onSubmit={onContactSubmitHandler}>
+          <form action="" onSubmit={onContactSubmitHandler} ref={form}>
             <input type="text" placeholder="Name" name="name" />
-            {/* {!enteredInputIsValid.name && isTouched && (
-                <p className="error-text">Entered name is invalid</p>
-              )} */}
-            <input type="text" placeholder="Subject" name="subject" />
-            {/* {!enteredInputIsValid.subject && isTouched && (
-                <p className="error-text">Entered Subject is invalid</p>
-              )} */}
+            {enteredInputIsInvalid.name && (
+              <p className="error-text">Entered name is invalid</p>
+            )}
             <input type="text" placeholder="Email" name="email" />
-            {/* {!enteredInputIsValid.email && isTouched && (
-                <p className="error-text">Entered email is invalid</p>
-              )} */}
+            {enteredInputIsInvalid.email && (
+              <p className="error-text">Entered email is invalid</p>
+            )}
+            <input type="text" placeholder="Subject" name="subject" />
             <textarea placeholder="Message" name="message" />
+            {enteredInputIsInvalid.message && (
+              <p className="error-text">Please enter a message</p>
+            )}
             <button type="submit" className="button">
               SEND
             </button>

@@ -127,3 +127,9 @@
   border-bottom: 2px solid rgb(235, 175, 119);
   outline: none;
 }
+
+.error-text {
+  margin-bottom: 1.2em;
+  font-size: 0.7em;
+  color: rgb(235, 13, 13);
+}

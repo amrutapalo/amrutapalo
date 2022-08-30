@@ -23,7 +23,7 @@
   font-size: 0.9em;
   position: relative;
   top: 0;
-  animation: slide 15s steps(5) infinite;
+  animation: slide 14s steps(5) infinite;
   height: 100%
 }
 
@@ -47,7 +47,7 @@
   background-color: rgb(25, 25, 25);
   /* font-weight: 300;*/
   /* animation: blink 0.7s infinite; */
-  animation: typing 3s steps(24) infinite;
+  animation: typing 2.8s steps(24) infinite;
 }
 
 @keyframes typing {
