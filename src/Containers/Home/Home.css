@@ -24,7 +24,7 @@
   position: relative;
   top: 0;
   animation: slide 14s steps(5) infinite;
-  height: 100%
+  height: 100%;
 }
 
 @keyframes slide {
@@ -166,4 +166,103 @@
   font-weight: 700;
   border-radius: 25px;
   font-size: 1em;
+}
+
+@media (max-width: 750px) {
+  .profile-home-container {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .profile-home-container .profile-left{
+    width: 100%;
+  }
+  .profile-home-container .profile-right{
+    width: 100%;
+  }
+
+  .profile-home-container .profile-right .profile-picture {
+    height: 295px;
+    width: 295px;
+    margin-top: 1em;
+  }
+
+  .profile-home-container .profile-right .profile-picture img {
+    height: 288px;
+    width: 288px;
+  }
+
+  .profile-home-container .profile-right .profile-picture img:hover {
+    transform: scale(1);
+  }
+
+  .profile-home-container .profile-left .profile-role {
+    font-size: 1.8em;
+  }
+
+  .profile-home-container {
+    background-size: 0;
+  }
+
+  .profile-home-container .social-media-icons i {
+    font-size: 1.2em;
+  }
+
+  .profile-home-container .profile-left .profile-name {
+    font-size: 1.2em;
+  }
+  
+  .profile-home-container
+    .profile-left
+    .profile-name
+    .profile-name-highlighted-text {
+    font-size: 1.1em;
+  }
+
+  .profile-home-container .profile-left .profile-description {
+    font-size: 1.1em;
+  }
+
+  .download-resume-btn{
+    padding: 0.8em;
+  }
+}
+
+@media (max-width: 505px) {
+  .profile-home-container .profile-right .profile-picture {
+    height: 270px;
+    width: 270px;
+    margin-top: 1em;
+  }
+
+  .profile-home-container .profile-right .profile-picture img {
+    height: 263px;
+    width: 263px;
+  }
+
+  .profile-home-container .profile-left .profile-name {
+    font-size: 0.8em;
+  }
+  
+  .profile-home-container
+    .profile-left
+    .profile-name
+    .profile-name-highlighted-text {
+    font-size: 1em;
+  }
+
+  .profile-home-container .profile-left .profile-description {
+    font-size: 0.9em;
+    margin: 0.4em;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .profile-home-container .profile-left .profile-role {
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+  }
+  .download-resume-btn{
+    margin-top: 0.3em;
+  }
 }
