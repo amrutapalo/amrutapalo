@@ -21,6 +21,8 @@
   background-repeat: no-repeat;
   background-position: bottom;
   width: 100%;
+  padding: 1em;
+
 }
 
 q::before {

@@ -10,24 +10,74 @@
   flex-direction: column;
 }
 
-.profile-home-container .profile-content{
-
+.profile-home-container .profile-content {
 }
-
+.profile-home-container .profile-left .profile-role ul {
+  height: 35px;
+  overflow: hidden;
+}
 .profile-home-container .profile-left .profile-role ul li {
   list-style: none;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0.9em;
+  position: relative;
+  top: 0;
+  animation: slide 15s steps(5) infinite;
+  height: 100%
+}
+
+@keyframes slide {
+  100% {
+    top: -175px;
+  }
+}
+.profile-home-container .profile-left .profile-role ul li span {
+  position: relative;
+  height: 100%;
+}
+
+.profile-home-container .profile-left .profile-role ul li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 120%;
+  width: 100%;
+  border-left: 1px solid white;
+  background-color: rgb(25, 25, 25);
+  /* font-weight: 300;*/
+  /* animation: blink 0.7s infinite; */
+  animation: typing 3s steps(24) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .profile-home-container {
   background-color: rgb(25, 25, 25);
   color: white;
-  background-image: url('/Users/amrutapalo/Desktop/amrutapalo/src/Containers/Footer/assets/shape-bg.png');
+  background-image: url("/Users/amrutapalo/Desktop/amrutapalo/src/Containers/Footer/assets/shape-bg.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 20%;
 }
 
-.social-media-icons i{
+.social-media-icons i {
   margin-right: 0.7em;
   font-size: 0.7em;
   margin-bottom: 1em;
@@ -54,7 +104,6 @@
   font-size: 1.4em;
   margin-top: 0;
   letter-spacing: 1px;
-
 }
 
 .profile-home-container
@@ -109,12 +158,12 @@
 }
 
 .download-resume-btn {
-    padding: 1em;
-    width: max-content;
-    background-color: var(--orange);
-    border: none;
-    color: white;
-    font-weight: 700;
-    border-radius: 25px;
-    font-size: 1em;
+  padding: 1em;
+  width: max-content;
+  background-color: var(--orange);
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 25px;
+  font-size: 1em;
 }

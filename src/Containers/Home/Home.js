@@ -32,11 +32,21 @@ const Home = () => {
         </div>
         <div className="profile-role">
           <ul className="dynamic-text">
-            <li>Enthusiastic Developer 😎</li>
-            <li>Web Developer 🌏</li>
-            <li>UI Developer 💻</li>
-            <li>Frontend Developer 👩‍💻</li>
-            <li>React Developer 📲</li>
+            <li>
+              <span> Enthusiastic Developer 😎</span>
+            </li>
+            <li>
+              <span>Web Developer 🌏</span>
+            </li>
+            <li>
+              <span>UI Developer 💻</span>
+            </li>
+            <li>
+              <span>Frontend Developer 👩‍💻</span>
+            </li>
+            <li>
+              <span>React Developer 📲</span>
+            </li>
           </ul>
         </div>
         <div className="profile-description">
@@ -56,7 +66,6 @@ const Home = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
