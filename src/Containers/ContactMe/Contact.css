@@ -133,3 +133,62 @@
   font-size: 0.7em;
   color: rgb(235, 13, 13);
 }
+
+@media (max-width: 750px) {
+  .contact-title {
+    height: 20%;
+    text-align: center;
+  }
+
+  .contact-secondary-text{
+    font-size: 0.8em;
+    margin: 0 0.5em;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    padding: 0.5em;
+    margin: 0;
+    padding-bottom: 0;
+    height: max-content;
+  }
+
+  .contact-left {
+    width: 100%;
+    padding: 0;
+    flex: 0 1;
+  }
+
+  .contact-right {
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+  }
+
+  .contact-image img {
+    height: 4em;
+    margin-bottom: 0;
+  }
+
+  .contact-left .social-media-icons {
+    margin-bottom: 0.5em;
+  }
+
+  .contact-right form textarea {
+    height: 5em;
+  }
+
+  .contact-left-primary-text{
+    font-size: 1em;
+  }
+
+  .contact-text{
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+  }
+  .contact-right form button{
+    width: 95px;
+  }
+  
+
+}
