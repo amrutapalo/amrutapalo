@@ -6,7 +6,7 @@ import './TestimonialCard.css';
 
 const TestimonialCard = (props) => {
     return (
-        <div className="testimonial-card">
+        <div className={`testimonial-card ${props.isActive ? "active" : ""}`}>
             <div className="testimonial-review">
                 {props.review}
             </div>

@@ -2,27 +2,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)) ,url("/Users/amrutapalo/Desktop/amrutapalo/src/Containers/Testimonial/assets/testimonial-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url("/Users/amrutapalo/Desktop/amrutapalo/src/Containers/Testimonial/assets/testimonial-bg.jpg");
   background-position: bottom;
   background-size: cover;
+  position: relative;
 }
 
 .testimonial-title {
   background-color: white;
   width: 100%;
 }
-
-.testimonial-carousel {
-  display: flex;
-  flex-direction: row;
-  height: 70%;
+.testimonial-carousel-container{
   background-image: url("/Users/amrutapalo/Desktop/amrutapalo/src/Containers/Footer/assets/shape-bg.png");
   background-size: 100% 30%;
   background-repeat: no-repeat;
   background-position: bottom;
   width: 100%;
-  padding: 1em;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
 
+.testimonial-carousel {
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+  width: 100%;
+  padding: 1em;
 }
 
 q::before {
@@ -33,4 +40,22 @@ q::before {
   font-weight: bold;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 1037px) {
+  .testimonial-carousel-container{
+    position: relative;
+    overflow: hidden;
+    background-size: 0;
+  }
+  
+  .testimonial-carousel {
+    background-size: 0;
+    /* position: absolute; */
+    width: 100%;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    height: 100%;
+    justify-content: center;
+  }
 }

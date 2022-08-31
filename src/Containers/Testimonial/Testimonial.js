@@ -1,9 +1,9 @@
 import React from "react";
 import "./Testimonial.css";
 import TestimonialCard from "./TestimonialCard";
-import rajshree from './assets/rajshree-nema.jpeg'
-import srijan from './assets/srijan.jpeg'
-import naman from './assets/naman.jpeg'
+import rajshree from "./assets/rajshree-nema.jpeg";
+import srijan from "./assets/srijan.jpeg";
+import naman from "./assets/naman.jpeg";
 
 const TESTIMONIALS = [
   {
@@ -12,6 +12,7 @@ const TESTIMONIALS = [
     image: rajshree,
     name: "Rajshree Nema",
     designation: "SDE, Addverb Technolgies",
+    isActive: true,
   },
   {
     review:
@@ -19,6 +20,7 @@ const TESTIMONIALS = [
     image: naman,
     name: "Naman Gupta",
     designation: "Technology Lead, Addverb Technolgies",
+    isActive: false,
   },
   {
     review:
@@ -26,6 +28,7 @@ const TESTIMONIALS = [
     image: srijan,
     name: "Srijan Jain",
     designation: "SDE, Addverb Technolgies",
+    isActive: false,
   },
 ];
 
@@ -34,18 +37,23 @@ const Testimonial = () => {
     <div className="testimonial-container container">
       <div className="testimonial-title title">
         <h2 className="testimonial-primary-text">Testimonials</h2>
-        <div className="testimonial-secondary-text secondary-text">What my colleagues say about me</div>
+        <div className="testimonial-secondary-text secondary-text">
+          What my colleagues say about me
+        </div>
         <i className="fa-solid fa-horizontal-rule"></i>
       </div>
-      <div className="testimonial-carousel">
-        {TESTIMONIALS.map((testimony) => (
-          <TestimonialCard
-            review={<q>{testimony.review}</q>}
-            image={testimony.image}
-            name={testimony.name}
-            designation={testimony.designation}
-          />
-        ))}
+      <div className="testimonial-carousel-container">
+        <div className="testimonial-carousel">
+          {TESTIMONIALS.map((testimony) => (
+            <TestimonialCard
+              review={<q>{testimony.review}</q>}
+              image={testimony.image}
+              name={testimony.name}
+              designation={testimony.designation}
+              isActive={testimony.isActive}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
